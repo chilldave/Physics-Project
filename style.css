@@ -1,0 +1,62 @@
+header h1,h2 {
+    font-size: 70px;
+    font-weight: 600;
+    /* background-image: radial-gradient(#553c9a, #ee4b2b); */
+    background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
+
+
+body{
+    color:beige;
+    background-color: #01141c;
+    text-align: center;
+}
+
+
+
+.form{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding:20px; */
+    color:#9e896f;
+    font-size:30px;
+    text-align: left;
+    align-items: center;
+
+    /* width:200px */
+}
+
+.reglon{
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top:10px;
+  margin-left: 40px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #2b332d;
+}
+#rapidezangular{
+  margin-left: 75px;
+}
+#velocidadtangencial{
+  margin-left: 55px;
+}
+#acecentripeta{
+  margin-left: 97px;
+}
+
+.menu{
+  font-size: 18px;
+  border-radius: 7px;
+  border: 3px solid #033a4f;
+}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Dave_1890</title>
+    
+</head>
+<body>
+    <header>
+    <h1>Projecto de Fisica</h1>
+    <h2>Movimiento Circular</h2>
+    <p>El siguiente projecto nos ayudara con los calculos de un problema de movimiento circular</p>
+    </header>
+    <h3>DATOS</h3>
+    <div class="FormularioCalculadora">
+        <div class="datosFormulario">
+            <form id="form" class="form">
+                <!--ANGULO-->
+               <!--  <label>
+                    "Angulo"
+                </label> -->
+                <input type="number" class="reglon" id="angulo" step="any" placeholder="Angulo" >
+                <select id="unidadmedida" class="menu">
+                    <option value="rad" selected>rad</option>
+                    <option value="vuelta">vueltas</option>
+                    <option value="grados">grados</option>
+                </select>
+
+                <!--Rapidez ANgular-->
+                <!-- <br> -->
+                <!-- <label>
+                    "Rapidez Angular"
+                </label> -->
+                <input type="number" class="reglon" id="rapidezangular" step="any" placeholder="Rapidez Angular">
+                <select id="unidaddra" class="menu">
+                    <option value="rad/s" selected>rad/s</option>
+                    <option value="rpm">r.p.m</option>
+                    <option value="grados/s">grados/s</option>
+                </select>
+                <!--time-->
+                <br>
+                <!-- <label>
+                    "Tiempo"
+                </label> -->
+                <input type="number" class="reglon" id="tiempo" step="any" placeholder="Tiempo">
+                <select id="unidaddtiempo" class="menu">
+                    <option value="seg" selected>segundos</option>
+                    <option value="min">minutos</option>
+                    <option value="hora">horas</option>
+                </select>
+                <!-- <br> -->
+                <!--velocidad tangencial-->
+               <!--  <label>
+                    "Velocidad tangencial "
+                </label> -->
+                <input type="number" class="reglon"  id="velocidadtangencial" step="any" placeholder="Velocidad tangencial">
+                <select id="unidadtang" class="menu">
+                    <option value="m/s" selected>m/s</option>
+                    <option value="km/h">km/h</option>
+                    <!-- <option value="grados/s">grados/s</option> -->
+                </select>
+
+                <br>
+                <!-- longitud arco  -->
+                <!-- <label>
+                    "Longitud de arco"
+                </label> -->
+                <input type="number" class="reglon" id="longitudarco" step="any" placeholder="Longitud de arco">
+                <select id="unidadlogarco" class="menu">
+                    <option value="cm">centimetros</option>
+                    <option value="m" selected>metros</option>
+                    <option value="km">kilometros</option>
+                </select>
+
+                <!-- diametro  -->
+                <!-- <br> -->
+                <!-- <label>
+                    "Diametro"
+                </label> -->
+                <input type="number" class="reglon" id="diametro" step="any" placeholder="Diametro">
+                <!-- <input type="number" id="longitudarco" step="any" > -->
+                <select id="unidadlogarco" class="menu">
+                    <option value="cm">centimetros</option>
+                    <option value="m" selected>metros</option>
+                    <option value="km">kilometros</option>
+                </select>
+
+                <!-- radio  -->
+                <br>
+               <!--  <label>
+                    "Radio"
+                </label> -->
+                <input type="number" class="reglon" id="radio" step="any" placeholder="Radio" >
+                <select id="unidadradio" class="menu">
+                    <option value="cm">centimetros</option>
+                    <option value="m" selected>metros</option>
+                    <option value="km">kilometros</option>
+                </select>
+
+                <!-- Periodo  -->
+                <!-- <br> -->
+                <!-- <label>
+                    "Periodo"
+                </label> -->
+                <input type="number" class="reglon" id="Periodo" step="any" placeholder="Periodo">
+                <select id="unidadperiodo" class="menu">
+                    <option value="seg" selected>segundos</option>
+                    <option value="min">minutos</option>
+                    <option value="hora">horas</option>
+                </select>
+                <!-- frecuencia   -->
+                <br>
+                <!-- <label>
+                    "Frecuencia"
+                </label> -->
+                <input type="number"  class="reglon" id="frecuencia" step="any" placeholder="Frecuencia">
+                <select id="unidadfrecuencia" class="menu">
+                    <option value="Hz" selected>Hz</option>
+                    <option value="mHz">mHz</option>
+                    <option value="kHz">kHz</option>
+                </select>
+                
+                <!-- Aceleracion centripeta  -->
+                <!-- <br> -->
+                <!-- <label>
+                    "Aceleracion Centripeta"
+                </label> -->
+                <input type="number" class="reglon" id="acecentripeta" step="any" placeholder="Aceleracion Centripeta">
+                <select id="unidadcentipeta" class="menu">
+                    <option value="m/s²" selected="">m/s²</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <!-- boton clear  -->
+                <input type="button" id="calcular" value="LIMPIAR" > 
+            
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>Todos los derechos reservados</footer>
+</body>
+</html>
