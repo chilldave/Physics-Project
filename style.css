@@ -1,6 +1,6 @@
-header h1,h2 {
+header h1  {
     font-size: 70px;
-    font-weight: 600;
+    font-weight: 650;
     /* background-image: radial-gradient(#553c9a, #ee4b2b); */
     background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
     color: transparent;
@@ -9,6 +9,33 @@ header h1,h2 {
     text-align: center;
   }
 
+h2 {
+  font-size: 50px;
+    font-weight: 600;
+    /* background-image: radial-gradient(#553c9a, #ee4b2b); */
+    background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+h3{
+  font-size: 30px;
+  text-align: left;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+p {
+  font-size: 30px;
+    font-weight: 600;
+    /* background-image: radial-gradient(#553c9a, #ee4b2b); */
+    background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
 
 body{
     color:beige;
@@ -43,6 +70,7 @@ body{
   margin-right: 5px;
   margin-bottom: 10px;
   border: 1px solid #2b332d;
+  font-weight: bold;
 }
 #rapidezangular{
   margin-left: 75px;
@@ -58,5 +86,20 @@ body{
   font-size: 18px;
   border-radius: 7px;
   border: 3px solid #033a4f;
+}
+
+#calcular{
+  background-color: #c23921;
+  color:aqua;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-left: 350px;
+  font-size: 18px;
+ border: 3px solid black;
+  border-radius: 15px;
+  /* text-shadow: 20px 15px 7px  */
 }
 
