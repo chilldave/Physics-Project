@@ -72,7 +72,6 @@ body{
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top:10px;
-  margin-left: 40px;
   margin-right: 5px;
   margin-bottom: 10px;
   border: 1px solid #2b332d;
@@ -88,21 +87,11 @@ body{
   margin-left: 97px;
 }
 
-.menu{
-  font-size: 18px;
-  border-radius: 7px;
-  border: 3px solid #033a4f;
-}
-
 #calcular{
   background-color: #c23921;
   color:aqua;
-  padding-left: 65px;
-  padding-right: 65px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 65px;
   margin-top: 0px;
-  margin-left: 350px;
   font-size: 18px;
  border: 3px solid black;
   border-radius: 15px;

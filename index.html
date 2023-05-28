@@ -4,148 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap to styling faster -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="shortcut icon" href="favicon.png">
     <title>Dave_1890</title>
     
 </head>
 <body onload="init();" >
+	<div class="alert alert-danger d-none" role="alert" id="alert">
+		Algunos datos no fueron ingresados
+	</div>
     <header>
-    <h1>Projecto de Fisica</h1>
-    <h2>Calculadora Movimiento Circular</h2>
-    <!-- <p>El siguiente projecto nos ayudara con los calculos de un problema de movimiento circular</p> -->
+			<h1>Projecto de Fisica</h1>
+			<h2>Calculadora Movimiento Circular</h2>
+			<!-- <p>El siguiente projecto nos ayudara con los calculos de un problema de movimiento circular</p> -->
     </header>
-    <h3>Ingrese datos : </h3>
-    <div class="FormularioCalculadora">
-        <div class="datosFormulario">
-            <form id="form" class="form">
-                <!--ANGULO-->
-               <!--  <label>
-                    "Angulo"
-                </label> -->
-                <input type="number" class="reglon" id="angulo" step="any" placeholder="Angulo" >
-                <select id="unidadmedida" class="menu">
-                    <option value="rad" selected>rad</option>
-                    <option value="vuelta">vueltas</option>
-                    <option value="grados">grados</option>
-                </select>
+		<div class="container">
+			<h3>Ingrese datos : </h3>
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<div class="FormularioCalculadora">
+						<div class="datosFormulario">
+							<form>
+								<div class="d-flex">
+									<input type="number" class="reglon" id="angulo" placeholder="Angulo" required="">
+									<input type="number" class="reglon" id="tiempo" placeholder="Tiempo" required="">
+									<input type="number" class="reglon"  id="radio" placeholder="Radio" required="">
+								</div>
+								<button type="submit" id="calcular">Calcular</button>
+							</form>
+						</div>
+					</div>
+				<div>
+			</div>
+			</div>
+			<table class="table bg-dark text-light">
+				<thead>
+					<tr>
+						<th>Velocidad Angular</th>
+						<th>Velocidad tangencial</th>
+						<th>Aceleracion centripeta</th>
+					</tr>
+				</thead>
+				<tbody id="tabla">
+				</tbody>
+			</table>
+		</div>
 
-                <!--Rapidez ANgular-->
-                <!-- <br> -->
-                <!-- <label>
-                    "Rapidez Angular"
-                </label> -->
-                <input type="number" class="reglon" id="rapidezangular" step="any" placeholder="Rapidez Angular">
-                <select id="unidaddra" class="menu">
-                    <option value="rad/s" selected>rad/s</option>
-                    <option value="rpm">r.p.m</option>
-                    <option value="grados/s">grados/s</option>
-                </select>
-                <!--time-->
-                <br>
-                <!-- <label>
-                    "Tiempo"
-                </label> -->
-                <input type="number" class="reglon" id="tiempo" step="any" placeholder="Tiempo">
-                <select id="unidaddtiempo" class="menu">
-                    <option value="seg" selected>segundos</option>
-                    <option value="min">minutos</option>
-                    <option value="hora">horas</option>
-                </select>
-                <!-- <br> -->
-                <!--velocidad tangencial-->
-               <!--  <label>
-                    "Velocidad tangencial "
-                </label> -->
-                <input type="number" class="reglon"  id="velocidadtangencial" step="any" placeholder="Velocidad tangencial">
-                <select id="unidadtang" class="menu">
-                    <option value="m/s" selected>m/s</option>
-                    <option value="km/h">km/h</option>
-                    <!-- <option value="grados/s">grados/s</option> -->
-                </select>
+  <footer>Todos los derechos reservados</footer>
 
-                <br>
-                <!-- longitud arco  -->
-                <!-- <label>
-                    "Longitud de arco"
-                </label> -->
-                <input type="number" class="reglon" id="longitudarco" step="any" placeholder="Longitud de arco">
-                <select id="unidadlogarco" class="menu">
-                    <option value="cm">centimetros</option>
-                    <option value="m" selected>metros</option>
-                    <option value="km">kilometros</option>
-                </select>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
-                <!-- diametro  -->
-                <!-- <br> -->
-                <!-- <label>
-                    "Diametro"
-                </label> -->
-                <input type="number" class="reglon" id="diametro" step="any" placeholder="Diametro">
-                <!-- <input type="number" id="longitudarco" step="any" > -->
-                <select id="unidadlogarco" class="menu">
-                    <option value="cm">centimetros</option>
-                    <option value="m" selected>metros</option>
-                    <option value="km">kilometros</option>
-                </select>
-
-                <!-- radio  -->
-                <br>
-               <!--  <label>
-                    "Radio"
-                </label> -->
-                <input type="number" class="reglon" id="radio" step="any" placeholder="Radio" >
-                <select id="unidadradio" class="menu">
-                    <option value="cm">centimetros</option>
-                    <option value="m" selected>metros</option>
-                    <option value="km">kilometros</option>
-                </select>
-
-                <!-- Periodo  -->
-                <!-- <br> -->
-                <!-- <label>
-                    "Periodo"
-                </label> -->
-                <input type="number" class="reglon" id="Periodo" step="any" placeholder="Periodo">
-                <select id="unidadperiodo" class="menu">
-                    <option value="seg" selected>segundos</option>
-                    <option value="min">minutos</option>
-                    <option value="hora">horas</option>
-                </select>
-                <!-- frecuencia   -->
-                <br>
-                <!-- <label>
-                    "Frecuencia"
-                </label> -->
-                <input type="number"  class="reglon" id="frecuencia" step="any" placeholder="Frecuencia">
-                <select id="unidadfrecuencia" class="menu">
-                    <option value="Hz" selected>Hz</option>
-                    <option value="mHz">mHz</option>
-                    <option value="kHz">kHz</option>
-                </select>
-                
-                <!-- Aceleracion centripeta  -->
-                <!-- <br> -->
-                <!-- <label>
-                    "Aceleracion Centripeta"
-                </label> -->
-                <input type="number" class="reglon" id="acecentripeta" step="any" placeholder="Aceleracion Centripeta">
-                <select id="unidadcentipeta" class="menu">
-                    <option value="m/s²" selected="">m/s²</option>
-                </select>
-                <br>
-                <!-- <br> -->
-                <br>
-                <!-- boton clear  -->
-                <input type="button" id="calcular" value="CALCULAR" > 
-            
-            </form>
-
-        </div>
-    </div>
-    <br>
-    <br>
-    <footer>Todos los derechos reservados</footer>
     <script src="main.js"></script>
 </body>
 </html>
