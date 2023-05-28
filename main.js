@@ -11,8 +11,6 @@ const obtenerDatos = () => {
 	} else {
 		alert.classList.add("d-none");
 
-		angulo = angulo * (Math.PI / 180);
-
 		return { angulo, tiempo, radio }
 	}
 }
@@ -39,7 +37,7 @@ const calcularDatos = (datos) => {
 		tr.innerHTML = `
 			<td>${velocidadAngular.toFixed(2)} rad/seg</td>
 			<td>${velocidadTangencial.toFixed(2)} m/s</td>
-			<td>${aceleracionCentripeta} m/s²</td>
+			<td>${aceleracionCentripeta.toFixed(2)} m/s²</td>
 		`
 
 		tabla.appendChild(tr);
