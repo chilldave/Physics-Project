@@ -49,10 +49,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /* padding:20px; */
     color:#9e896f;
+    display:table-row;
     font-size:30px;
+    /* background-color: ; */
     text-align: left;
-    align-items: center;
-
+    /* align-items: center; */
+    margin: 0 auto;
+    padding: 20px;
+    width: 700px;
+    height: 500px;
+    
     /* width:200px */
 }
 
